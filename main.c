@@ -6,9 +6,9 @@
 #include "queue.h"
 
 int getPriority(char* op) {
-    if (strcmp(op, "^") == 0) return 4;
-    if (strcmp(op, "*") == 0 || strcmp(op, "/") == 0 || strcmp(op, "%") == 0) return 3;
-    if (strcmp(op, "+") == 0 || strcmp(op, "-") == 0) return 2;
+    if (strcmp(op, "^") == 0) return 3;
+    if (strcmp(op, "*") == 0 || strcmp(op, "/") == 0 || strcmp(op, "%") == 0) return 2;
+    if (strcmp(op, "+") == 0 || strcmp(op, "-") == 0) return 1;
     return 0;
 }
 
